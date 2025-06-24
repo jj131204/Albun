@@ -1,7 +1,8 @@
 body{
     margin: 0;
-    max-height: 90vh;
+    /* max-height: 90vh; */
     /* overflow: hidden; */
+    min-height: 100vh;
     background: url('images/fondo.jpg')right/cover;
     background-repeat: no-repeat;
     display: flex;
@@ -9,6 +10,7 @@ body{
     justify-content: space-between;
     align-items: center;
     padding: 40px 0;
+    margin: auto;
 }
 
 *{
