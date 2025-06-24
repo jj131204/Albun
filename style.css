@@ -1,8 +1,7 @@
 body{
-    min-height: 100vh;
     margin: 0;
-    max-height: 100vh;
-    overflow: hidden;
+    max-height: 90vh;
+    /* overflow: hidden; */
     background: url('images/fondo.jpg')right/cover;
     background-repeat: no-repeat;
     display: flex;
