@@ -4,39 +4,88 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Albún</title>
-    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    
 </head>
 <body>
     <h1 class="titleAlbun">❤️ La señorita mas bonita ❤️</h1>
-    <div class="flipbook centered" id="flipbook">
-        <div class="leaf">
-            <div class="page front title external">
-                <p class="textPhoto">Así es como se ve la perfección para mí..</p>
-                
-                <img class="image" src="images/foto1.jpg" alt="">
-
-                <p class="textPhoto">Te quiero mucho <b>ʕ⁠っ⁠•⁠ᴥ⁠•⁠ʔ⁠っ</b></p>
+    <div class="contentAlbun">
+        
+        <div class="flipbook centered" id="flipbook">
+            <div class="leaf">
+                <div class="page front title external">
+                    <p class="textPhoto">Así es como se ve la perfección para mí..</p>
+                    <img class="image" src="images/foto1.jpg" alt="">
+                    <p class="textPhoto">Te quiero mucho <b >ʕ⁠っ⁠•⁠ᴥ⁠•⁠ʔ⁠っ</b></p>
+                </div>
+                <div class="page back">
+                    <p class="textPhoto">Me hace inmensamente feliz cada uno de tus logros.</p>
+                    <img class="image" src="images/foto3.jpg" alt="">
+                    <p class="textPhoto">Estoy muy orgulloso de tí ❤️</p>
+                </div>
             </div>
-            <div class="page back">
+            <div class="leaf">
+                <div class="page front">
+                     <p class="textPhoto">Verte solo 5 minutos me alegra el día entero.</p>
+                    <img class="image" src="images/foto4.jpg" alt="">
+                    <p class="textPhoto">❤️</p>
+                </div>
+                <div class="page back">
+                     <p class="textPhoto">Más allá de la pantalla, solo te veía a ti.</p>
+                    <img class="image" src="images/foto5.jpg" alt="">
+                    <p class="textPhoto">❤️</p>
+                </div>
                 
+            </div>
+            <div class="leaf">
+                <div class="page front">
+                     <p class="textPhoto">❤️</p>
+                    <img class="image" src="images/comoentrenar.jpg" alt="">
+                    <p class="textPhoto">pd: Fue la primera vez que te tome de la mano.</p>
+                </div>
+                <div class="page back">
+                    <p class="textPhoto">La mejor vocera que ha tenido el SENA.</p>
+                    <img class="image" src="images/foto8.jpg" alt="">
+                    
+                    <p class="textPhoto"></p>
+                </div>
+            </div>
+            <div class="leaf">
+                <div class="page front">
+                    <p class="textPhoto"></p>   
+                    <img class="image" src="images/foto6.jpg" alt="">
+                    <p class="textPhoto">Te vez muy bonita con el uniforme 😍</p>
+                </div>
+                <div class="page back">
+                    <p class="textPhoto">Siempre vas a ser la mas bonita ❤️</p>
+                    <img class="image" src="images/foto2.jpg" alt="">
+                    <p class="textPhoto"></p>
+                </div>
+            </div>
+            <div class="leaf">
+                <div class="page front">
+                     <p class="textPhoto">En muy poco tiempo te volviste muy especial para mí.</p>
+                    <img class="image" src="images/foto9.jpg" alt="">
+                    <p class="textPhoto"></p>
+                </div>
+                <div class="page back">
+                    <p class="textPhoto">Por todos los momentos que atesoramos y por los infinitos que aún nos quedan por crear juntos</p>
+                    <div class="noPhoto"></div>
+                    <!-- <img class="image" src="images/noFoto.png" alt=""> -->
+                    <p class="textPhoto">Pd: Aquí falta una foto juntos</p>
+                </div>
             </div>
         </div>
-        <div class="leaf">
-            <div class="page front">
-            
-            </div>
-            <div class="page back">
-            
-            </div>
+        <div class="controls">
+            <button id="prevPage">&lt; Anterior</button>
+            <button id="nextPage">Siguiente &gt;</button>
         </div>
     </div>
-    <div class="controls">
-        <button id="prevPage">&lt; Anterior</button>
-        <button id="nextPage">Siguiente &gt;</button>
-    </div>
+    <div class=""></div>
     <script src="script.js"></script>
 </body>
 </html>
