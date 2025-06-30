@@ -94,7 +94,7 @@ const pages = [
         },
         back: {
             textTop: "Por todos los momentos que atesoramos y por los infinitos que aún nos quedan por crear juntos..",
-            video: "images/video1.mp4", // no tiene imagen
+            img: "", // no tiene imagen
             textBottom: "Pd: Por muchos recuerdos más contigo ❤️"
         }
     }
