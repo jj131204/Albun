@@ -94,14 +94,12 @@ const pages = [
         },
         back: {
             textTop: "Por todos los momentos que atesoramos y por los infinitos que aún nos quedan por crear juntos..",
-            img: "", // no tiene imagen
+            video: "images/video1.mp4", // no tiene imagen
             textBottom: "Pd: Por muchos recuerdos más contigo ❤️"
         }
     }
 
 ];
-
-// 2. Crear el álbum dinámicamente
 function createFlipbook() {
     const flipbook = document.getElementById("flipbook");
 
@@ -113,7 +111,11 @@ function createFlipbook() {
         frontPage.className = "page front";
         frontPage.innerHTML = `
             <p class="textPhoto">${front.textTop || ""}</p>
-            ${front.img ? `<img class="image" src="${front.img}" alt="">` : '<div class="noPhoto"></div>'}
+            ${front.video
+                ? `<video class="media" autoplay loop muted playsinline><source src="${front.video}" type="video/mp4" >Tu navegador no soporta el video.</video>`
+                : front.img
+                    ? `<img class="image" src="${front.img}" alt="">`
+                    : '<div class="noPhoto"></div>'}
             <p class="textPhoto">${front.textBottom || ""}</p>
         `;
 
@@ -121,7 +123,11 @@ function createFlipbook() {
         backPage.className = "page back";
         backPage.innerHTML = `
             <p class="textPhoto">${back.textTop || ""}</p>
-            ${back.img ? `<img class="image" src="${back.img}" alt="">` : '<div class="noPhoto"></div>'}
+            ${back.video
+                ? `<video class="media" autoplay loop muted playsinline><source src="${back.video}" type="video/mp4" >Tu navegador no soporta el video.</video>`
+                : back.img
+                    ? `<img class="image" src="${back.img}" alt="">`
+                    : '<div class="noPhoto"></div>'}
             <p class="textPhoto">${back.textBottom || ""}</p>
         `;
 
@@ -131,7 +137,7 @@ function createFlipbook() {
     });
 }
 
-// 3. Clase FlipBook como ya la tienes
+// 3. Clase para controlar el álbum
 class FlipBook {
     constructor(bookElem) {
         this.elems = {
@@ -155,7 +161,6 @@ class FlipBook {
         } else {
             page.classList.remove("turned");
         }
-
         if (page.style.transform !== transform) {
             page.style.transform = transform;
         }
@@ -168,7 +173,6 @@ class FlipBook {
             this.currentPagePosition = 0;
             return;
         }
-
         if (this.currentPagePosition > this.elems.leaves.length) {
             this.currentPagePosition = this.elems.leaves.length;
             return;
@@ -185,17 +189,12 @@ class FlipBook {
     }
 
     setupEvents() {
-        this.elems.buttons.next.addEventListener("click", () => {
-            this.turnPage(1);
-        });
-
-        this.elems.buttons.prev.addEventListener("click", () => {
-            this.turnPage(-1);
-        });
+        this.elems.buttons.next.addEventListener("click", () => this.turnPage(1));
+        this.elems.buttons.prev.addEventListener("click", () => this.turnPage(-1));
     }
 }
 
-// 4. Inicializar todo cuando el DOM esté listo
+// 4. Inicializar al cargar el documento
 document.addEventListener("DOMContentLoaded", () => {
     createFlipbook();
     const flipBook = new FlipBook(document.getElementById("flipbook"));
