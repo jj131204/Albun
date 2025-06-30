@@ -112,7 +112,7 @@ function createFlipbook() {
         frontPage.innerHTML = `
             <p class="textPhoto">${front.textTop || ""}</p>
             ${front.video
-                ? `<video class="media" autoplay loop muted playsinline><source src="${front.video}" type="video/mp4" >Tu navegador no soporta el video.</video>`
+                ? `<video autoplay loop muted playsinline><source src="${front.video}" type="video/mp4" >Tu navegador no soporta el video.</video>`
                 : front.img
                     ? `<img class="image" src="${front.img}" alt="">`
                     : '<div class="noPhoto"></div>'}
@@ -124,7 +124,7 @@ function createFlipbook() {
         backPage.innerHTML = `
             <p class="textPhoto">${back.textTop || ""}</p>
             ${back.video
-                ? `<video class="media" autoplay loop muted playsinline><source src="${back.video}" type="video/mp4" >Tu navegador no soporta el video.</video>`
+                ? `<video  autoplay loop muted playsinline><source src="${back.video}" type="video/mp4" >Tu navegador no soporta el video.</video>`
                 : back.img
                     ? `<img class="image" src="${back.img}" alt="">`
                     : '<div class="noPhoto"></div>'}
