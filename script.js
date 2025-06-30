@@ -67,7 +67,7 @@ const pages = [
             textBottom: "Te voy a dar muchos abrazos y besos siempre :3"
         },
         back: {
-            textTop: "Mas fotos juntos ❤️",
+            textTop: "Más fotos juntos ❤️",
             img: "images/foto13.jpg",
             textBottom: ""
         }
@@ -90,7 +90,7 @@ const pages = [
         front: {
             textTop: "Te quiero mucho señorita ❤️",
             img: "images/foto15.jpg",
-            textBottom: "Eres demaciado especial para mi"
+            textBottom: "Eres demasiado especial para mí"
         },
         back: {
             textTop: "Por todos los momentos que atesoramos y por los infinitos que aún nos quedan por crear juntos..",
