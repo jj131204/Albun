@@ -84,13 +84,37 @@ const pages = [
             textBottom: ""
         }
     },
-
-    // Este siempre queda de ultimo
     {
         front: {
             textTop: "Te quiero mucho señorita ❤️",
             img: "images/foto15.jpg",
             textBottom: "Eres demasiado especial para mí"
+        },
+        back: {
+            textTop: "Y los cumpliste feliz 💕",
+            img: "images/foto19.jpg",
+            textBottom: ""
+        }
+    },
+    {
+        front: {
+            textTop: "",
+            img: "images/foto18.jpg",
+            textBottom: "Ya eres una señorita adulta responsable 😎"
+        },
+        back: {
+            textTop: "Foto familiar 😎😎",
+            img: "images/foto20.jpg",
+            textBottom: ""
+        }
+    },
+
+    // Este siempre queda de ultimo
+    {
+        front: {
+            textTop: "Me alegra mucho haberlo pasado contigo",
+            img: "images/foto17.jpg",
+            textBottom: "Me gustas mucho señorita ❤️❤️  "
         },
         back: {
             textTop: "Por todos los momentos que atesoramos y por los infinitos que aún nos quedan por crear juntos..",
