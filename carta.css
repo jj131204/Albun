@@ -54,7 +54,7 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    padding: 5vw;
+    padding: 20px;
     border: 2px solid #a0552c;
     opacity: 0;
     /* transform: translateY(3vh);   */
@@ -77,6 +77,8 @@ body {
     max-width: 100%;
     color: #333;
     line-height: 1.5;
+    font-family: 'Dancing Script', cursive;
+    letter-spacing: 1.5px;
 }
 
 .heart {
@@ -88,7 +90,7 @@ body {
 
 @media (min-width: 600px) {
     .message {
-        font-size: 16px;
+        font-size: 17px;
     }
     .heart {
         font-size: 24px;
