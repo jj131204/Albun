@@ -30,10 +30,10 @@ h1{
 }
 
 .envelope {
-    width: 90vw;
-    max-width: 350px;
+    width: 95vw;
+    max-width: 400px;
     height: 55vw;
-    max-height: 230px;
+    max-height: 300px;
     position: relative;
     perspective: 1000px;
     cursor: pointer;
