@@ -1,0 +1,93 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: #fdeef2;
+    font-family: 'Segoe UI', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0 5vw;
+}
+
+.envelope {
+    width: 90vw;
+    max-width: 350px;
+    height: 55vw;
+    max-height: 230px;
+    position: relative;
+    perspective: 1000px;
+    cursor: pointer;
+    border: 1px solid #e57373;
+    border-radius: 5px;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16) !important;
+}
+
+.flap {
+  width: 100%;
+  height: 100%;
+  background: #e57373;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform-origin: top;
+  transition: transform 1s ease;
+  z-index: 3;
+  clip-path: polygon(0 0, 100% 0, 50% 60%);
+}
+
+.envelope.open .flap {
+  transform: rotateX(180deg);
+}
+
+
+.paper {
+    background: white;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 5vw;
+    border: 2px solid #e57373;
+    opacity: 0;
+    /* transform: translateY(3vh);   */
+    transition: opacity 0.5s ease 0.5s, transform 0.5s ease 0.5s;
+    z-index: 1;
+    overflow: auto;
+}
+
+.envelope.open .paper {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.open{
+    border: 0 !important;
+}
+
+.message {
+    font-size: 4vw;
+    max-width: 100%;
+    color: #333;
+    line-height: 1.5;
+}
+
+.heart {
+    color: #e57373;
+    font-size: 6vw;
+    text-align: center;
+    margin-top: 2vh;
+}
+
+@media (min-width: 600px) {
+    .message {
+        font-size: 16px;
+    }
+    .heart {
+        font-size: 24px;
+    }
+}
