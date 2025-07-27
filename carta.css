@@ -87,7 +87,7 @@ h1{
 }
 
 .message {
-    font-size: 4vw;
+    font-size: 17px;
     max-width: 100%;
     color: #333;
     line-height: 1.5;
@@ -104,7 +104,7 @@ h1{
 
 @media (min-width: 600px) {
     .message {
-        font-size: 17px;
+        font-size: 1px;
     }
     .heart {
         font-size: 24px;
