@@ -104,7 +104,7 @@ h1{
 
 @media (min-width: 600px) {
     .message {
-        font-size: 1px;
+        font-size: 16px;
     }
     .heart {
         font-size: 24px;
