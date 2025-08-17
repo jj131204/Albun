@@ -108,13 +108,25 @@ const pages = [
             textBottom: ""
         }
     },
-
-    // Este siempre queda de ultimo
     {
         front: {
             textTop: "Me alegra mucho haberlo pasado contigo",
             img: "images/foto17.jpg",
             textBottom: "Me gustas mucho señorita ❤️❤️  "
+        },
+        back: {
+            textTop: "Primera ida a la finca",
+            img: "images/arbol.jpg",
+            textBottom: "Esos mangos se acabaron rápido 😂"
+        }
+    },
+
+    // Este siempre queda de ultimo
+    {
+        front: {
+            textTop: "Primera lluvia",
+            img: "images/impermeable.jpg",
+            textBottom: "Parecemos dos minions 😎"
         },
         back: {
             textTop: "Por todos los momentos que atesoramos y por los infinitos que aún nos quedan por crear juntos..",
