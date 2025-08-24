@@ -120,11 +120,23 @@ const pages = [
             textBottom: "Esos mangos se acabaron rápido 😂"
         }
     },
-     {
+    {
         front: {
             textTop: "Primera lluvia",
             img: "images/impermeable.jpg",
             textBottom: "Parecemos dos minions 😎"
+        },
+        back: {
+            textTop: "Buñuela al volante 😂",
+            img: "images/pilota2.jpg",
+            textBottom: ""
+        }
+    },
+    {
+        front: {
+            textTop: "",
+            img: "images/pilota.jpg",
+            textBottom: "Ya solo falta el pase 😎"
         },
         back: {
             textTop: "Primer paseo juntos 😎",
