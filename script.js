@@ -120,13 +120,50 @@ const pages = [
             textBottom: "Esos mangos se acabaron rápido 😂"
         }
     },
-
-    // Este siempre queda de ultimo
-    {
+     {
         front: {
             textTop: "Primera lluvia",
             img: "images/impermeable.jpg",
             textBottom: "Parecemos dos minions 😎"
+        },
+        back: {
+            textTop: "Primer paseo juntos 😎",
+            img: "images/cienaga.jpg",
+            textBottom: ""
+        }
+    },
+    {   
+        front: {
+            textTop: "",
+            img: "images/cienaga1.jpg",
+            textBottom: "Por mas planes juntos ❤️"
+        },
+        back: {
+            textTop: "La señorita mas bonita 💕",
+            img: "images/playa1.jpg",
+            textBottom: ""
+        }
+    },
+    {   
+        front: {
+            textTop: "Las mejores aventuras son las que no se planean",
+            img: "images/playa2.jpg",
+            textBottom: "❤️"
+        },
+        back: {
+            textTop: "Eres muy especial para mi señorita ❤️",
+            img: "images/playa3.jpg",
+            textBottom: ""
+        }
+    },
+
+
+    // Este siempre queda de ultimo
+    {
+        front: {
+            textTop: "",
+            img: "images/playa4.jpg",
+            textBottom: "Por mas planes juntos ❤️"
         },
         back: {
             textTop: "Por todos los momentos que atesoramos y por los infinitos que aún nos quedan por crear juntos..",
