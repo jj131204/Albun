@@ -223,7 +223,7 @@ const pages = [
             textBottom: "❤️"
         },
         back: {
-            textTop: "Los mejores planes imporivsados ❤️😎",
+            textTop: "Los mejores planes improvisados ❤️😎",
             img: "images/mirador.jpg",
             textBottom: ""
         }
