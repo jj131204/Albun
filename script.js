@@ -168,13 +168,74 @@ const pages = [
             textBottom: ""
         }
     },
+    {   
+        front: {
+            textTop: "",
+            img: "images/playa4.jpg",
+            textBottom: "Por mas planes juntos ❤️"
+        },
+        back: {
+            textTop: "",
+            img: "images/politica.jpg",
+            textBottom: ""
+        }
+    },
+    {   
+        front: {
+            textTop: "",
+            img: "images/politica1.jpg",
+            textBottom: "❤️"
+        },
+        back: {
+            textTop: "",
+            img: "images/politica2.jpg",
+            textBottom: ""
+        }
+    },
+    {   
+        front: {
+            textTop: "Las mejores aventuras son las que no se planean",
+            img: "images/politica3.jpg",
+            textBottom: "❤️"
+        },
+        back: {
+            textTop: "Cada quien se peina como quire 😂😂",
+            img: "images/videoLlamada.jpg",
+            textBottom: ""
+        }
+    },
+    {   
+        front: {
+            textTop: "",
+            img: "images/videoLlamada2.jpg",
+            textBottom: "❤️"
+        },
+        back: {
+            textTop: "",
+            img: "images/durmiendo.jpg",
+            textBottom: ""
+        }
+    },
+    {   
+        front: {
+            textTop: "La mas dormilona tu ❤️",
+            img: "images/durmiendo2.jpg",
+            textBottom: "❤️"
+        },
+        back: {
+            textTop: "Los mejores planes imporivsados ❤️😎",
+            img: "images/mirador.jpg",
+            textBottom: ""
+        }
+    },
+
 
 
     // Este siempre queda de ultimo
     {
         front: {
             textTop: "",
-            img: "images/playa4.jpg",
+            img: "images/mirador1.jpg",
             textBottom: "Por mas planes juntos ❤️"
         },
         back: {
