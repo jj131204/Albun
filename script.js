@@ -229,14 +229,147 @@ const pages = [
         }
     },
 
-
-
-    // Este siempre queda de ultimo
-    {
+    {   
         front: {
             textTop: "",
             img: "images/mirador1.jpg",
             textBottom: "Por mas planes juntos ❤️"
+        },
+        back: {
+            textTop: "Nuestro primer quinceañero 😌😌",
+            img: "images/quinceanero1.jpg",
+            textBottom: ""
+        }
+    },
+
+    {   
+        front: {
+            textTop: "",
+            img: "images/quinceanero2.jpg",
+            textBottom: "❤️"
+        },
+        back: {
+            textTop: "Siempre te ves preciosa mientras duermes ❤️",
+            img: "images/quinceanero3.jpg",
+            textBottom: ""
+        }
+    },
+
+    {   
+        front: {
+            textTop: "",
+            img: "images/grupoJuvenil1.jpg",
+            textBottom: "❤️"
+        },
+        back: {
+            textTop: "",
+            img: "images/grupoJuvenil2.jpg",
+            textBottom: ""
+        }
+    },
+
+    {   
+        front: {
+            textTop: "La que mas limpia 😂😂",
+            img: "images/limpieza.jpg",
+            textBottom: "❤️"
+        },
+        back: {
+            textTop: "",
+            img: "images/ccCarnaval1.jpg",
+            textBottom: ""
+        }
+    },
+    {   
+        front: {
+            textTop: "",
+            img: "images/ccCarnaval2.jpg",
+            textBottom: "❤️"
+        },
+        back: {
+            textTop: "",
+            img: "images/biker1.jpg",
+            textBottom: ""
+        }
+    },
+    {   
+        front: {
+            textTop: "",
+            img: "images/corazon.jpg",
+            textBottom: "❤️"
+        },
+        back: {
+            textTop: "",
+            img: "images/salida1.jpg",
+            textBottom: ""
+        }
+    },
+    {   
+        front: {
+            textTop: "",
+            img: "images/salida2.jpg",
+            textBottom: "❤️"
+        },
+        back: {
+            textTop: "",
+            img: "images/biker3.jpg",
+            textBottom: ""
+        }
+    },
+    {   
+        front: {
+            textTop: "Que nunca falten las capturas de pantalla 😂😂",
+            img: "images/videoLlamada3.jpg",
+            textBottom: "❤️"
+        },
+        back: {
+            textTop: "Primera navidad juntos ❤️",
+            img: "images/navidad4.jpg",
+            textBottom: ""
+        }
+    },
+    {   
+        front: {
+            textTop: "❤️",
+            img: "images/navidad1.jpg",
+            textBottom: "❤️"
+        },
+        back: {
+            textTop: "❤️",
+            img: "images/navidad2.jpg",
+            textBottom: ""
+        }
+    },
+    {   
+        front: {
+            textTop: "",
+            img: "images/navidad3.jpg",
+            textBottom: "❤️"
+        },
+        back: {
+            textTop: "",
+            img: "images/navidad5.jpg",
+            textBottom: "Nueva integrante de la familia ❤️"
+        }
+    },
+        {   
+        front: {
+            textTop: "Mi novia la mas hermonsa 😘",
+            img: "images/anoNuevo.jpg",
+            textBottom: ""
+        },
+        back: {
+            textTop: "",
+            img: "images/usiacuri.jpg",
+            textBottom: "Nuevo año, nuevas rutas ❤️"
+        }
+    },
+    // Este siempre queda de ultimo
+    {
+        front: {
+            textTop: "",
+            img: "images/usiacuri1.jpg",
+            textBottom: ""
         },
         back: {
             textTop: "Por todos los momentos que atesoramos y por los infinitos que aún nos quedan por crear juntos..",
