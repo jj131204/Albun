@@ -144,7 +144,7 @@ const pages = [
             textBottom: ""
         }
     },
-    {   
+    {
         front: {
             textTop: "",
             img: "images/cienaga1.jpg",
@@ -156,7 +156,7 @@ const pages = [
             textBottom: ""
         }
     },
-    {   
+    {
         front: {
             textTop: "Las mejores aventuras son las que no se planean",
             img: "images/playa2.jpg",
@@ -168,7 +168,7 @@ const pages = [
             textBottom: ""
         }
     },
-    {   
+    {
         front: {
             textTop: "",
             img: "images/playa4.jpg",
@@ -180,7 +180,7 @@ const pages = [
             textBottom: ""
         }
     },
-    {   
+    {
         front: {
             textTop: "",
             img: "images/politica1.jpg",
@@ -192,7 +192,7 @@ const pages = [
             textBottom: ""
         }
     },
-    {   
+    {
         front: {
             textTop: "Las mejores aventuras son las que no se planean",
             img: "images/politica3.jpg",
@@ -204,7 +204,7 @@ const pages = [
             textBottom: ""
         }
     },
-    {   
+    {
         front: {
             textTop: "",
             img: "images/videoLlamada2.jpg",
@@ -216,7 +216,7 @@ const pages = [
             textBottom: ""
         }
     },
-    {   
+    {
         front: {
             textTop: "La mas dormilona tu ❤️",
             img: "images/durmiendo2.jpg",
@@ -229,7 +229,7 @@ const pages = [
         }
     },
 
-    {   
+    {
         front: {
             textTop: "",
             img: "images/mirador1.jpg",
@@ -242,7 +242,7 @@ const pages = [
         }
     },
 
-    {   
+    {
         front: {
             textTop: "",
             img: "images/quinceanero2.jpg",
@@ -255,7 +255,7 @@ const pages = [
         }
     },
 
-    {   
+    {
         front: {
             textTop: "",
             img: "images/grupoJuvenil1.jpg",
@@ -268,7 +268,7 @@ const pages = [
         }
     },
 
-    {   
+    {
         front: {
             textTop: "La que mas limpia 😂😂",
             img: "images/limpieza.jpg",
@@ -280,7 +280,7 @@ const pages = [
             textBottom: ""
         }
     },
-    {   
+    {
         front: {
             textTop: "",
             img: "images/ccCarnaval2.jpg",
@@ -292,7 +292,7 @@ const pages = [
             textBottom: ""
         }
     },
-    {   
+    {
         front: {
             textTop: "",
             img: "images/corazon.jpg",
@@ -304,7 +304,7 @@ const pages = [
             textBottom: ""
         }
     },
-    {   
+    {
         front: {
             textTop: "",
             img: "images/salida2.jpg",
@@ -316,7 +316,7 @@ const pages = [
             textBottom: ""
         }
     },
-    {   
+    {
         front: {
             textTop: "Que nunca falten las capturas de pantalla 😂😂",
             img: "images/videoLlamada3.jpg",
@@ -328,7 +328,7 @@ const pages = [
             textBottom: ""
         }
     },
-    {   
+    {
         front: {
             textTop: "❤️",
             img: "images/navidad1.jpg",
@@ -340,7 +340,7 @@ const pages = [
             textBottom: ""
         }
     },
-    {   
+    {
         front: {
             textTop: "",
             img: "images/navidad3.jpg",
@@ -352,7 +352,7 @@ const pages = [
             textBottom: "Nueva integrante de la familia ❤️"
         }
     },
-        {   
+    {
         front: {
             textTop: "Mi novia la mas hermonsa 😘",
             img: "images/anoNuevo.jpg",
@@ -364,12 +364,49 @@ const pages = [
             textBottom: "Nuevo año, nuevas rutas ❤️"
         }
     },
-    // Este siempre queda de ultimo
+    // 
     {
         front: {
             textTop: "",
             img: "images/usiacuri1.jpg",
             textBottom: ""
+        },
+        back: {
+            textTop: "",
+            img: "images/08_03_2026_01.jpeg",
+            textBottom: "Primera ruta a puerto ❤️"
+        }
+    },
+    {
+        front: {
+            textTop: "Mi novia la mas hermonsa 😘",
+            img: "images/08_03_2026_02.jpeg",
+            textBottom: "Muelle de puerto colombia ✌️✌️"
+        },
+        back: {
+            textTop: "",
+            img: "images/08_03_2026_03.jpeg",
+            textBottom: "Por mas atardecers juntos ❤️"
+        }
+    },
+    {
+        front: {
+            textTop: "Mi novia la mas hermonsa 😘",
+            img: "images/08_03_2026_04.jpeg",
+            textBottom: ""
+        },
+        back: {
+            textTop: "",
+            img: "images/08_03_2026_05.jpeg",
+            textBottom: "Los 25 dolares 🤣🤣"
+        }
+    },
+    // Este siempre queda de ultimo
+    {
+        front: {
+            textTop: "",
+            img: "images/08_03_2026_06.jpeg",
+            textBottom: "El nine tu tu 😂😂 "
         },
         back: {
             textTop: "Por todos los momentos que atesoramos y por los infinitos que aún nos quedan por crear juntos..",
