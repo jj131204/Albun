@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestros 6 Meses Juntos</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #fff5f7;
+            overflow-x: hidden;
+        }
+        .font-romantic {
+            font-family: 'Dancing Script', cursive;
+        }
+        .glass {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        canvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            pointer-events: none;
+        }
+        .gradient-text {
+            background: linear-gradient(to right, #ff4e50, #f9d423);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .scroll-reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1);
+        }
+        .scroll-reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .img-container {
+            transition: transform 0.3s ease;
+        }
+        .img-container:hover {
+            transform: scale(1.02);
+        }
+    </style>
+</head>
+<body class="text-slate-800">
+
+    <canvas id="heartCanvas"></canvas>
+
+    <!-- Main Content -->
+    <main class="min-h-screen flex flex-col items-center justify-center p-4 md:p-10 text-center">
+        
+        <!-- Hero Section -->
+        <section class="mb-16 mt-10">
+            <div class="inline-block p-2 px-4 rounded-full bg-pink-100 text-pink-600 font-semibold text-sm mb-4 animate-bounce">
+                ¡Feliz Aniversario! ❤️
+            </div>
+            <h1 class="text-5xl md:text-8xl font-romantic gradient-text mb-4">6 Meses de Nosotros</h1>
+            <p class="text-lg text-slate-500 max-w-md mx-auto px-4">Media vuelta al sol escribiendo nuestra propia historia, un día a la vez.</p>
+        </section>
+
+        <!-- Countdown Timer -->
+        <div class="glass p-6 md:p-10 rounded-[2.5rem] shadow-2xl w-full max-w-3xl mb-24 transform hover:scale-[1.01] transition-all">
+            <h2 class="text-slate-400 text-xs uppercase tracking-[0.2em] mb-8 font-black">Cronómetro de nuestra felicidad</h2>
+            <div class="grid grid-cols-4 gap-2 md:gap-8" id="timer">
+                <div class="flex flex-col bg-white/50 p-4 rounded-2xl shadow-sm">
+                    <span id="days" class="text-2xl md:text-6xl font-bold text-pink-500">00</span>
+                    <span class="text-[9px] md:text-xs text-slate-400 mt-2 uppercase font-semibold">Días</span>
+                </div>
+                <div class="flex flex-col bg-white/50 p-4 rounded-2xl shadow-sm">
+                    <span id="hours" class="text-2xl md:text-6xl font-bold text-pink-500">00</span>
+                    <span class="text-[9px] md:text-xs text-slate-400 mt-2 uppercase font-semibold">Horas</span>
+                </div>
+                <div class="flex flex-col bg-white/50 p-4 rounded-2xl shadow-sm">
+                    <span id="minutes" class="text-2xl md:text-6xl font-bold text-pink-500">00</span>
+                    <span class="text-[9px] md:text-xs text-slate-400 mt-2 uppercase font-semibold">Mins</span>
+                </div>
+                <div class="flex flex-col bg-white/50 p-4 rounded-2xl shadow-sm">
+                    <span id="seconds" class="text-2xl md:text-6xl font-bold text-pink-500">00</span>
+                    <span class="text-[9px] md:text-xs text-slate-400 mt-2 uppercase font-semibold">Segs</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Timeline with Images -->
+        <div class="w-full max-w-4xl space-y-12 mb-32 px-2">
+            
+            <!-- Memory 1 -->
+            <div class="scroll-reveal glass p-6 md:p-8 rounded-[2rem] flex flex-col md:flex-row gap-8 items-center text-left">
+                <div class="w-full md:w-2/5 shrink-0 overflow-hidden rounded-2xl shadow-lg img-container">
+                    <!-- Reemplaza el src con tu foto real -->
+                    <img src="../images/playa3-1.jpg" 
+                         alt="[Imagen de nuestro primer día]" 
+                         class="w-full h-64 object-cover">
+                </div>
+                <div class="flex-1">
+                    <div class="flex items-center gap-3 mb-3">
+                        <div class="bg-pink-500 p-2 rounded-xl text-white shadow-md shadow-pink-200">
+                            <i data-lucide="calendar-heart" class="w-5 h-5"></i>
+                        </div>
+                        <h3 class="font-bold text-2xl">El inicio de todo</h3>
+                    </div>
+                    <p class="text-pink-400 text-sm font-semibold italic mb-3">23 de Octubre</p>
+                    <p class="text-slate-600 leading-relaxed">
+                        Llevábamos más de un año conociéndonos y conviviendo antes del 23 de octubre. No necesitábamos etiquetas para saber que estábamos bien; simplemente fluía porque nos entendíamos y elegíamos estar ahí cada día. 
+                    </p>
+                </div>
+            </div>
+
+            <!-- Memory 2 -->
+            <div class="scroll-reveal glass p-6 md:p-8 rounded-[2rem] flex flex-col md:flex-row-reverse gap-8 items-center text-left">
+                <div class="w-full md:w-2/5 shrink-0 overflow-hidden rounded-2xl shadow-lg img-container">
+                    <img src="../images/foto10.jpg" 
+                         alt="[Imagen de nuestra primera salida]" 
+                         class="w-full h-64 object-cover">
+                </div>
+                <div class="flex-1">
+                    <div class="flex items-center gap-3 mb-3">
+                        <div class="bg-orange-400 p-2 rounded-xl text-white shadow-md shadow-orange-200">
+                            <i data-lucide="camera" class="w-5 h-5"></i>
+                        </div>
+                        <h3 class="font-bold text-2xl">Memorias guardadas</h3>
+                    </div>
+                    <p class="text-orange-400 text-sm font-semibold italic mb-3">Nuestra primera foto</p>
+                    <p class="text-slate-600 leading-relaxed">
+                        Esta es de las primeras veces que salimos. No teníamos etiquetas en ese momento, pero ya se notaba que la cosa iba en serio y que no era algo pasajero.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Memory 3 -->
+            <div class="scroll-reveal glass p-6 md:p-8 rounded-[2rem] flex flex-col md:flex-row gap-8 items-center text-left">
+                <div class="w-full md:w-2/5 shrink-0 overflow-hidden rounded-2xl shadow-lg img-container">
+                    <img src="../images/navidad4.jpg" 
+                         alt="[Imagen de un paisaje o viaje juntos]" 
+                         class="w-full h-64 object-cover">
+                </div>
+                <div class="flex-1">
+                    <div class="flex items-center gap-3 mb-3">
+                        <div class="bg-purple-500 p-2 rounded-xl text-white shadow-md shadow-purple-200">
+                            <i data-lucide="map-pin" class="w-5 h-5"></i>
+                        </div>
+                        <h3 class="font-bold text-2xl">Aventuras compartidas</h3>
+                    </div>
+                    <p class="text-purple-400 text-sm font-semibold italic mb-3">Barranquilla y nuevos horizontes</p>
+                    <p class="text-slate-600 leading-relaxed">
+                        No importa si estamos en la esquina o de ruta, lo importante es que siempre sea contigo. Cada kilómetro recorrido ha sido muy especial.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="mt-auto pb-20">
+            <a href="/Albun" class="group bg-gradient-to-r from-pink-500 to-rose-500 text-white px-10 py-4 rounded-2xl font-bold shadow-2xl hover:shadow-pink-300 transition-all hover:-translate-y-1 active:scale-95 flex items-center gap-3 mx-auto">
+                Nuestros recuerdos juntos
+                <i data-lucide="heart" class="w-5 h-5 group-hover:fill-current"></i>
+            </a>
+        </footer>
+
+    </main>
+
+    <script>
+        // Inicializar Iconos
+        lucide.createIcons();
+
+        // Configuración de Fecha (Ajusta la fecha real aquí)
+        const startDate = new Date('2025-10-23T00:00:00');
+
+        function updateTimer() {
+            const now = new Date();
+            const diff = now - startDate;
+
+            const d = Math.floor(diff / (1000 * 60 * 60 * 24));
+            const h = Math.floor((diff / (1000 * 60 * 60)) % 24);
+            const m = Math.floor((diff / (1000 * 60)) % 60);
+            const s = Math.floor((diff / 1000) % 60);
+
+            document.getElementById('days').innerText = d.toString().padStart(2, '0');
+            document.getElementById('hours').innerText = h.toString().padStart(2, '0');
+            document.getElementById('minutes').innerText = m.toString().padStart(2, '0');
+            document.getElementById('seconds').innerText = s.toString().padStart(2, '0');
+        }
+
+        setInterval(updateTimer, 1000);
+        updateTimer();
+
+        // Fondo de Corazones (Canvas)
+        const canvas = document.getElementById('heartCanvas');
+        const ctx = canvas.getContext('2d');
+        let hearts = [];
+
+        function resize() {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        }
+
+        window.addEventListener('resize', resize);
+        resize();
+
+        class Heart {
+            constructor() {
+                this.reset();
+            }
+            reset() {
+                this.x = Math.random() * canvas.width;
+                this.y = canvas.height + 20;
+                this.size = Math.random() * 12 + 6;
+                this.speed = Math.random() * 1 + 0.3;
+                this.opacity = Math.random() * 0.4 + 0.1;
+                this.swing = Math.random() * 2;
+            }
+            draw() {
+                ctx.save();
+                ctx.translate(this.x, this.y);
+                ctx.globalAlpha = this.opacity;
+                ctx.fillStyle = '#ff7eb3';
+                ctx.beginPath();
+                ctx.moveTo(0, 0);
+                ctx.bezierCurveTo(-this.size/2, -this.size/2, -this.size, this.size/3, 0, this.size);
+                ctx.bezierCurveTo(this.size, this.size/3, this.size/2, -this.size/2, 0, 0);
+                ctx.fill();
+                ctx.restore();
+            }
+            update() {
+                this.y -= this.speed;
+                this.x += Math.sin(this.y / 50) * this.swing;
+                if (this.y < -20) this.reset();
+            }
+        }
+
+        for (let i = 0; i < 35; i++) hearts.push(new Heart());
+
+        function animate() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            hearts.forEach(h => { h.update(); h.draw(); });
+            requestAnimationFrame(animate);
+        }
+        animate();
+
+        // Efecto de Revelado al hacer Scroll
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) entry.target.classList.add('active');
+            });
+        }, { threshold: 0.15 });
+
+        document.querySelectorAll('.scroll-reveal').forEach(el => observer.observe(el));
+
+        // Funciones del Modal
+        function showMessage() {
+            const modal = document.getElementById('modal');
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+            // Trigger confetti o similar si se desea
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('modal');
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+        }
+    </script>
+</body>
+</html>
